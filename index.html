@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-     <script type="text/javascript">
-         $(function () {
-             $('button').on('click',function () {
-                 $('<a>').attr('href', 'www.baidu.com').appendTo($('body'));
-             })
-         });
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('button').click(function () {
+                $('body').append(
+                    $('<a>').attributes('href', 'www.baidu.com').innerText('百度一下')
+                );
+            });
+        })
 
-     </script>
+
+    </script>
     <style>
         button {
             width: 200px;
             background: black;
             color: white;
+            height: 50px;
         }
     </style>
 </head>
 <body>
 <button>Search</button>
+
 </body>
 </html>
