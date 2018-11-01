@@ -109,3 +109,5 @@ venv.bak/
 将删除 readme.txt
 将删除 test.py
 主题
+将删除 .idea/inspectionProfiles/
+将删除 .idea/workspace.xml

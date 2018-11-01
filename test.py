@@ -1,2 +1,3 @@
-def User():
-    print('helloworld')
+import time
+def timer():
+    time.clock()
